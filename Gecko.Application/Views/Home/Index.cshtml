@@ -15,15 +15,15 @@
     <script type="text/javascript" src="~/Content/Scripts/jquery-easyui/jquery.easyui.min.js"></script>
 </head>
 <body class="easyui-layout">
-    <div data-options="region:'north',border:false" style="height:60px;background-color:#ccc">
-        <div style="float:left; padding-left:13px;"><h2>&nbsp;&nbsp;JQueryEasyUI后台框架</h2></div>
-        <div style="float:right; padding-right:19px; font-size:13px; line-height:60px;">
+    <div data-options="region:'north',border:true" style="height:79px;background-color:#ccc;background:url('/Content/images/header.gif') repeat-x;margin-bottom:6px;">
+        <div style="float:left; padding-left:13px;"><h1>&nbsp;&nbsp;JQueryEasyUI后台框架</h1></div>
+        <div style="float:right; padding-right:19px; font-size:13px; line-height:70px;">
             <a href="javascript:void(0);" id="btnpwd">修改密码</a>
             &nbsp;&nbsp;&nbsp;
             <a href="javascript:void(0);" id="btnloginout">退出系统</a> 
         </div>
     </div>
-    <div data-options="region:'west',split:true" title="导航" style="width:230px; padding:6px;">
+    <div data-options="region:'west',split:true" title="导航" style="width:230px; padding:6px; ">
         <ul class="easyui-tree" id="easyuitree">正在加载...</ul>
     </div>
     <div id="content" region="center" data-options="border:false">
@@ -34,7 +34,7 @@
         </div>
     </div>
     <div data-options="region:'south',split:false" style="height:1px;"></div>
-    <div id="staffwin1" title=" " style="width:330px;"></div>
+    <div id="staffwin1" style="width:330px;"></div>
 </body>
 </html>
 <script type="text/javascript">

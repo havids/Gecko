@@ -10,7 +10,7 @@ namespace Gecko.Application.Filters
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-
+            
             //获取当前的Action
             string currentAction = filterContext.RouteData.Values["action"].ToString();
             string currentController = filterContext.RouteData.Values["controller"].ToString();
