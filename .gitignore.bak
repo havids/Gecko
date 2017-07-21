@@ -5,7 +5,7 @@
 *.suo
 *.user
 *.sln.docstates
-Web.config
+*.Web.config
 
 # Build results
 
