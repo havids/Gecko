@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>帐户登录</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Scripts/jquery-easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Scripts/jquery-easyui/themes/icon.css">
+    <script type="text/javascript" src="~/Content/Scripts/jquery-easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Content/Scripts/jquery-easyui/jquery.easyui.min.js"></script>
+
+</head>
+<body>
+    <div id="content" style="margin:0 auto;margin-top:300px;width:400px; ">
+        <div class="easyui-panel" title="帐户登录" style="width:400px;">
+            <div style="padding:10px 60px 20px 60px">
+                <form id="ff" method="post">
+                    <table cellpadding="5">
+                        <tr>
+                            <td>用户名:</td>
+                            <td><input class="easyui-textbox" type="text" name="userName"></td>
+                        </tr>
+                        <tr>
+                            <td>密码:</td>
+                            <td><input class="easyui-textbox" type="password" name="userPwd"></td>
+                        </tr>
+                        <tr>
+                            <td>安全码:</td>
+                            <td><input class="easyui-textbox" type="text" name="securityPwd"></td>
+                        </tr>
+                    </table>
+                    <div style="text-align:center;padding:5px">
+                        <input type="submit" value="确定" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="errorMsg" style="padding:6px;color:red;">@ViewBag.ErrorMsg</div>
+    </div>
+</body>
+</html>
